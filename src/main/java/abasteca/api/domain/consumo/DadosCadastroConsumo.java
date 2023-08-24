@@ -1,5 +1,3 @@
-package abasteca.api.domain.consumo
+package abasteca.api.domain.consumo;
 
-class DadosCadastroConsumo {
-
-}
+public record DadosCadastroConsumo(){}
