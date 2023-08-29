@@ -1,3 +1,6 @@
 package abasteca.api.domain.abastecimento;
 
-public record DadosCadastroAbastecimento(){}
+public record DadosCadastroAbastecimento(
+    String combustivel,
+    BigDecimal quantidade
+){}
