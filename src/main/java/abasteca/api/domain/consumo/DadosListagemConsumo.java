@@ -1,3 +1,5 @@
 package abasteca.api.domain.consumo;
 
-public record DadosListagemConsumo(){}
+import java.math.BigDecimal;
+
+public record DadosListagemConsumo(Long id, BigDecimal kmPrevista){}
