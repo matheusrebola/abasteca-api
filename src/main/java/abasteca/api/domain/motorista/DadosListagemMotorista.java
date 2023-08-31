@@ -7,7 +7,7 @@ public record DadosListagemMotorista(
         LocalDateTime dataNascimento,
         Sexo sexo
 ){
-    DadosListagemMotorista(Motorista motorista){
+    public DadosListagemMotorista(Motorista motorista){
         this(motorista.getId(), motorista.getDataNascimento(), motorista.getSexo());
     }
 }
