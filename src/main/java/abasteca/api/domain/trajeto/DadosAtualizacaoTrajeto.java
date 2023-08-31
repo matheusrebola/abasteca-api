@@ -1,3 +1,9 @@
 package abasteca.api.domain.trajeto;
 
-public record DadosAtualizacaoTrajeto(){}
+import java.math.BigDecimal;
+
+public record DadosAtualizacaoTrajeto(
+        Long id,
+        BigDecimal longitude,
+        BigDecimal latitude
+){}
