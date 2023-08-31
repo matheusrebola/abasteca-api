@@ -9,7 +9,7 @@ import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 
-@Table(name = "abastecimentos")
+@Table(name = "Abastecimentos")
 @Entity(name = "Abastecimento")
 @Getter
 @NoArgsConstructor
