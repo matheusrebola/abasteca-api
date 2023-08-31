@@ -8,8 +8,8 @@ import lombok.NoArgsConstructor;
 
 import java.math.BigDecimal;
 
-@Table(name = "medicos")
-@Entity(name = "Medico")
+@Table(name = "Cosumos")
+@Entity(name = "consumo")
 @Getter
 @NoArgsConstructor
 @AllArgsConstructor
