@@ -34,7 +34,7 @@ public class Abastecimento {
         if (dados.combustivel() != null){
             this.combustivel = dados.combustivel();
         }
-        if (dados.quantidade().equals(new BigDecimal(BigInteger.ZERO)) ){
+        if (dados.quantidade() != null){
             this.quantidade = dados.quantidade();
         }
     }
