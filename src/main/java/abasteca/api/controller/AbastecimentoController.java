@@ -28,13 +28,13 @@ public class AbastecimentoController {
         var abastecimento = new Abastecimento(dados);
         repository.save(abastecimento);
 
-        var uri = uriBuilder.path("/medicos/{id}").buildAndExpand(abastecimento.getId()).toUri();
+        var uri = uriBuilder.path("/abastecimento/{id}").buildAndExpand(abastecimento.getId()).toUri();
 
         return ResponseEntity.created(uri).body(new DadosListagemAbastecimento(abastecimento));
     }
 
     @GetMapping
-    public ResponseEntity<Page<DadosListagemAbastecimento>> listar(@PageableDefault(size = 10, sort = {"nome"}) Pageable paginacao) {
+    public ResponseEntity<Page<DadosListagemAbastecimento>> listar(@PageableDefault(size = 10, sort = {"id"}) Pageable paginacao) {
         var page = repository.findAllByAtivoTrue(paginacao).map(DadosListagemAbastecimento::new);
         return ResponseEntity.ok(page);
     }
@@ -51,8 +51,8 @@ public class AbastecimentoController {
     @DeleteMapping("/{id}")
     @Transactional
     public ResponseEntity excluir(@PathVariable Long id) {
-        var medico = repository.getReferenceById(id);
-        medico.excluir();
+        var abastecimento = repository.getReferenceById(id);
+        abastecimento.excluir();
 
         return ResponseEntity.noContent().build();
     }
