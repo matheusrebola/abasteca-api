@@ -1,3 +1,8 @@
 package abasteca.api.domain.motorista;
 
-public record DadosCadastroMotorista(){}
+import java.time.LocalDateTime;
+
+public record DadosCadastroMotorista(
+        LocalDateTime dataNascimento,
+        Sexo sexo
+){}
