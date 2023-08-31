@@ -1,3 +1,12 @@
 package abasteca.api.domain.conducao;
 
-public record DadosAtualizacaoConducao(){}
+import jakarta.validation.constraints.NotNull;
+
+public record DadosAtualizacaoConducao(
+        @NotNull
+        Long id,
+        Avatar avatar,
+        EstiloDirecao estiloDirecao
+){
+
+}
