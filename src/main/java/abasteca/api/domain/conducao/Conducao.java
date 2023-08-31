@@ -1,6 +1,5 @@
 package abasteca.api.domain.conducao;
 
-import abasteca.api.domain.abastecimento.DadosAtualizacaoAbastecimento;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.EqualsAndHashCode;
