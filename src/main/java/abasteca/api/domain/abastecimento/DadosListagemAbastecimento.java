@@ -1,5 +1,7 @@
 package abasteca.api.domain.abastecimento;
 
+import java.math.BigDecimal;
+
 public record DadosListagemAbastecimento(
     Long id,
     String combustivel,
