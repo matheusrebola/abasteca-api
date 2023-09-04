@@ -1,0 +1,87 @@
+/*? vars ?*/
+:root {
+    --rose: #C33C54;
+    --indigo: #254E70;
+    --cerulean: #254E70;
+    --photo-blue: #254E70;
+    --celeste: #AEF3E7;
+    --white: #ffffff;
+}
+
+/*? vars ?*/
+
+
+/*! === BASIC RESET === !*/
+* {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+strong {
+    overflow: hidden;
+}
+
+/*! === BASIC RESET === !*/
+
+/** === HEADER ===**/
+.main-header>nav {
+    background-color: var(--celeste);
+    padding: 1rem 0;
+}
+
+.navbar-brand {
+    font-size: 2rem !important;
+}
+
+.active {
+    color: var(--rose) !important;
+}
+
+/** === HEADER ===**/
+
+/**=== FORM SECTION ===**/
+.form-section {
+    width: 100%;
+    height: 100%;
+    padding: 250px 0;
+    background-color: var(--photo-blue);
+}
+
+.btn-submit {
+    background-color: var(--rose) !important;
+    color: var(--white) !important;
+    padding: 1rem 3rem !important;
+}
+
+/**=== FORM SECTION ===**/
+
+/**=== TABLE SECTION ===**/
+
+.table-section {
+    width: 100%;
+    height: 100%;
+    padding: 18.2em 0;
+    background-color: var(--photo-blue);
+}
+
+/**=== TABLE SECTION ===**/
+
+
+/** === FOOTER ===**/
+footer {
+    background: #071C26;
+    color: #ffffff;
+    padding: 1.5em 0;
+}
+
+/** === FOOTER ===**/
