@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abasteça Challenge</title>
+    <!-- linking css -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <!-- linking css -->
+    <!-- Linking bootstrap v5.2.3 & font awesome v6.2.1-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.1/css/bootstrap.min.css"
+        integrity="sha512-Z/def5z5u2aR89OuzYcxmDJ0Bnd5V1cKqBEbvLOiUNWdg9PQeXVvXLI90SE4QOHGlfLqUnDNVAYyZi8UwUTmWQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Linking bootstrap v5.2.3 & font awesome v6.2.1-->
+</head>
+
+<body>
+
+    <!-- main header -->
+    <header class="main-header">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand d-flex align-items-center" href="#">Abasteça&nbsp;<i
+                        class="fa fa-gas-pump"></i></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Cadastro</a>
+                        </li>                        
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Dashboard</a>
+                        </li>                        
+                    </ul>
+                    <div class="d-flex">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link d-flex align-items-center" aria-current="page" href="#"><i
+                                        class="fa fa-user"></i>&nbsp;Login</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="form-section">
+        <form action="">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-6">
+                        <div class="mb-3">
+                            <label for="nome" class="form-label text-white">Nome do condutor</label>
+                            <input type="text" class="form-control" id="nome" placeholder="Exemplo: João">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="mb-3">
+                            <label for="modelo" class="form-label text-white">Modelo do carro</label>
+                            <input type="text" class="form-control" id="modelo" placeholder="Exemplo: Ford Ka Sedan">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="mb-3">
+                            <label for="combustivel" class="form-label text-white">Tipo do combustível</label>
+                            <select class="form-select" aria-label="Default select example" id="combustivel">
+                                <option selected>Selecione o combustível atual</option>
+                                <option value="1">Ethanol (Álcool)</option>
+                                <option value="2">Gasolina</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="mb-3">
+                            <label for="litros" class="form-label text-white">Litros abastecidos</label>
+                            <input class="form-control" type="number" placeholder="0.0" step="0.50" min="1" />
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12 text-center mt-3">
+                    <button class="btn btn-submit" value="Enviar" type="submit">Enviar</button>
+                </div>
+            </div>
+        </form>
+    </section>
+
+    <footer>
+        <div class="container">
+           <div class="row">
+            <div class="col-md-12 text-center">
+                <h4>Abasteça&nbsp;<i class="fa fa-gas-pump"></i>. Desenvolvido pela Techno Wizardry.</h4>
+            </div>
+           </div>
+        </div>
+    </footer>
+
+    <!-- scripts-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.1/js/bootstrap.min.js"
+        integrity="sha512-fHY2UiQlipUq0dEabSM4s+phmn+bcxSYzXP4vAXItBvBHU7zAM/mkhCZjtBEIJexhOMzZbgFlPLuErlJF2b+0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- scripts -->
+</body>
+
+</html>
