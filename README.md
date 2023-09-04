@@ -25,3 +25,5 @@ Gostaria de contribuir? Ótimo!
 Entrega! utiliza Java e JavaScript para funcionar, em sua essência.
 
 Main Editor: https://github.com/matheusrebola
+Editors: https://github.com/Ygor-Calimanis
+         https://github.com/GeanPfefer
